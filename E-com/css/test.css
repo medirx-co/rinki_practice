@@ -1,0 +1,701 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    font-family: Inter, sans-serif;
+    color: #333;
+    font-size: 15px;
+    line-height: 20px;
+    
+}
+.navbar{
+  z-index: 1000;
+}
+
+header{
+    
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+.card-button{
+  position: relative;
+    min-height: 36px;
+    min-width: 58px;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: #0dcaf0;
+    background-position: 0px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background-color 250ms ease;
+    font-size: 26px;
+    text-align: center;
+}
+
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  .marketing h2 {
+    font-weight: 100;
+  }
+  
+  .marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+  }
+  /* img {
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+    border: 0;
+    width: auto;
+   
+  } */
+  .content-section {
+    position: relative;
+    padding: 120px 3%;
+    background-color: transparent;
+}
+    @media screen and (max-width: 991px){
+        .content-section {
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+    }
+    h2 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: #35b8be;
+        font-size: 55px;
+        line-height: 1;
+        font-weight: 700;
+        letter-spacing: -0.03em;
+    }
+  /* .content-grid {
+        grid-column-gap: 44px;
+        display: grid;
+        grid-auto-columns: 1fr;
+    }
+
+    @media screen and (max-width: 991px){
+        .content-grid {
+        grid-row-gap: 80px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+    } */
+    
+    
+    
+    /* Create four equal columns that sits next to each other */
+    .column {
+      -ms-flex: 50%; /* IE10 */
+      flex: 50%;
+      max-width: 50%;
+      margin: 4rem;
+      padding: 0 4px;
+      
+    }
+    
+    .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
+    }
+    
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+      .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+    
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+
+
+
+
+
+
+
+
+
+  .content-section-bg {
+    position: relative;
+    padding: 50px 3%;
+    text-align: center;
+  }
+    
+
+    @media screen and (max-width: 991px)
+    { 
+        .content-section-bg {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            background-color: #f5fbfc;
+            background-image: none;
+            background-size: auto;
+            background-repeat: repeat;
+        }
+    }
+.container-flex{
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    
+    box-shadow: 1px 10px 15px grey;
+}
+.tab-menu-round{
+    
+    margin: 20px;
+    
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.w-tab-menu{
+    position: relative;
+}
+.row-g-3{
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.food-card {
+     display: flex;
+    min-height: 200px;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(53, 184, 190, 0.15);
+    border-radius: 6px;
+    background-color: #fff;
+    transition: border-color 300ms ease;
+    
+}
+@media screen and (max-width: 479px){
+    .food-card {
+        padding: 16px;
+    }
+}
+.add-to-card{
+    justify-content:start;
+    align-items: center;
+    
+}
+@media screen and (max-width: 767px){
+    .add-to-cart {
+        margin-top: 20px;
+    }
+}
+
+  h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #35b8be;
+    font-size: 55px;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+}
+.about-section {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    padding: 100px 3% 140px;
+    -webkit-box-pack: center;
+    
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    
+    -ms-flex-align: center;
+    align-items: center;
+    
+    background-position: 100% 0%;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+@media screen and (max-width: 767px){
+    .about-section{
+        padding-bottom: 60px;
+        
+    }
+}
+
+
+@media screen and (max-width: 991px){
+.about-section{
+    padding-top: 140px;
+    
+}
+}
+.quantity{
+    width: 50px;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    
+}
+/**************** food_menu css start ****************/
+.food_menu {
+    padding: 30px 0;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  @media (max-width: 576px) {
+
+    .food_menu {
+      padding: 70px 0px 50px;
+    }
+  }
+  
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+
+    .food_menu {
+      padding: 70px 0px 50px;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .food_menu {
+      padding: 70px 0px 50px;
+    }
+  }
+  
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+    .food_menu {
+      padding: 70px 0px 40px;
+    }
+  }
+  
+
+  .food_menu .nav-tabs {
+    border-bottom: 0px solid #dee2e6;
+    position: relative;
+   
+  }
+  
+
+  .food_menu .nav-tabs a {
+    font-size: 16px;
+    color: #0d1c26;
+    padding: 45px 25px 25px;
+    position: relative;
+    
+   
+  }
+  
+  @media (max-width: 576px){ 
+
+    .food_menu .nav-tabs a {
+      padding: 5px 10px 15px;
+    }
+  }
+  
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+
+    .food_menu .nav-tabs a {
+      padding: 20px 25px 25px;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .food_menu .nav-tabs a {
+      padding: 20px 25px 25px;
+    }
+  }
+  
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+    .food_menu .nav-tabs a {
+      padding: 35px 15px 15px;
+    }
+  }
+  
+
+  .food_menu .nav-tabs a:last-child {
+    padding: 45px 0px 20px 20px;
+  }
+  
+  @media (max-width: 576px) {
+
+    .food_menu .nav-tabs a:last-child {
+      padding: 5px 10px 15px;
+    }
+  }
+  
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+      .food_menu .nav-tabs a:last-child {
+      padding: 20px 0px 20px 20px;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .food_menu .nav-tabs a:last-child {
+      padding: 20px 0px 20px 20px;
+    }
+  }
+  
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+      .food_menu .nav-tabs a:last-child {
+      padding: 35px 0px 15px 15px;
+    }
+  }
+  
+  .food_menu .nav-tabs a img {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform: rotate(90deg);
+   
+  }
+  
+  .food_menu .nav-tabs .active {
+    color: #ff6426;
+  }
+  
+  .food_menu .nav-tabs .active img {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform: rotate(90deg);
+    height: 14px;
+    width: 10px;
+    bottom: 8px;
+  }
+  
+  .food_menu .nav-tabs #Burger-tab img {
+    left: 25px;
+   
+  }
+  
+  .food_menu .single_food_item {
+    margin-bottom: 50px;
+    background-color: #fff;
+    display: flex;
+    min-height: 150px;
+    -webkit-box-align: center;
+    align-items: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 10px;
+    background-color: #fff;
+    
+    transition: border-color 300ms ease;
+}
+  
+  
+  @media (max-width: 576px) {
+    /* line 80, E:/169 Dingo Restaurant/169 Dingo Restaurant/169_Dingo_Restautent_html/sass/_food_menu.scss */
+    .food_menu .single_food_item {
+      margin-bottom: 20px;
+      
+    }
+  }
+  
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+      .food_menu .single_food_item {
+      margin-bottom: 20px;
+      padding: 10px;
+      flex-wrap: wrap;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .food_menu .single_food_item {
+      margin-bottom: 20px;
+      padding: 10px;
+    }
+  }
+  
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+      .food_menu .single_food_item {
+      margin-bottom: 30px;
+    }
+  }
+  
+  .food_menu .single_food_item img {
+    border-right: 5px solid #f6f5f1;
+    
+    padding: 1rem;
+  }
+  
+  @media (max-width: 576px) {
+      .food_menu .single_food_item img {
+      border-right: 0px solid #f6f5f1;
+      margin: 0 auto;
+      display: block;
+      margin-right: auto !important;
+      text-align: center;
+      border-radius: 2px;
+    }
+  }
+  
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+      .food_menu .single_food_item img {
+      border-right: 0px solid #f6f5f1;
+      margin: 0 auto;
+      display: block;
+      margin-right: auto !important;
+      text-align: center;
+      border-radius: 2px;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .food_menu .single_food_item img {
+      border-right: 0px solid #f6f5f1;
+      margin: 0 auto;
+      display: block;
+      margin-right: auto !important;
+      text-align: center;
+      border-radius: 50%;
+    }
+  }
+  
+   .food_menu .single_food_item .media-body {
+    padding-left: 26px;
+  }
+  
+  @media (max-width: 576px) {
+       .food_menu .single_food_item .media-body {
+      margin-top: 10px;
+      padding-left: 00px;
+      text-align: center;
+    }
+  }
+  
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+       .food_menu .single_food_item .media-body {
+      margin-top: 10px;
+      padding-left: 00px;
+      text-align: center;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    
+    .food_menu .single_food_item .media-body {
+      margin-top: 10px;
+      padding-left: 00px;
+      text-align: center;
+    }
+  }
+  
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    
+    .food_menu .single_food_item .media-body {
+      padding-left: 0px;
+    }
+  }
+  
+  
+  .food_menu .single_food_item .media-body h3 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  
+  .food_menu .single_food_item .media-body h5 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ff6426;
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 576px) {
+    
+    .food_menu .single_food_item .media-body h5 {
+      margin-top: 10px;
+    }
+  }
+  
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    
+    .food_menu .single_food_item .media-body h5 {
+      margin-top: 10px;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    
+    .food_menu .single_food_item .media-body h5 {
+      margin-top: 10px;
+    }
+  }
+  /**************** food_menu css end ****************/
+
+
+  /**************** Banner css start ****************/
+
+  .hero-image {
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../image/bg.jpg"); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-color: #f5fbfc;
+    
+      
+  }
+  .hero-image img{
+    -webkit-filter: available;
+    width: 100%;
+    filter: blur(8px);
+    
+  }
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(11, 11, 11);
+    font-size: 25px;
+    font-weight: 200;
+  }
+  .hero-text h1{
+    font-size: 50px;
+    font-weight: 300;
+  }
+  .brand-span{
+    color: rgb(231, 240, 229);
+    font-size: 50px;
+    font-weight: 300;
+  }
+  
+  /**************** Banner css end ****************/
+
+  /**************** Company content css start ****************/
+    .marketing h2 {
+        font-weight: 400;
+    }
+    @media (min-width: 40em){
+    .featurette-heading {
+        font-size: 70px;
+    }
+  }
+    .featurette-heading {
+        font-weight: 500;
+        line-height: 1;
+        letter-spacing: -.05rem;
+    }
+    .lead {
+      font-size: 1.25rem;
+      font-weight: 300;
+    }
+
+    .cta-full-image{
+      display: flex;
+      min-height: 100px;
+      padding: 100px 3%;
+      -webkit-box-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      align-items: center;
+      background-image: radial-gradient(circle farthest-corner at 50% 50%, rgba(0, 0, 0, 0.67), rgba(25, 26, 27, 0.19)), url("../image/bg1.jpg");
+      background-position: 0px 0px, 50% 50%;
+      background-size: auto, cover;
+      background-repeat: repeat, no-repeat;
+      background-attachment: scroll, fixed;
+    }
+    .p{
+      text-align: center;
+      
+    }
+    
+
+    /**************** Company content css end ****************/
+
+    .container-lg {
+      margin-top: 1rem;
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    /**************** FQA css start ****************/
+
+    .container-tight {
+      width: 100%;
+      max-width: 1000px;
+      margin-right: auto;
+      margin-left: auto;
+      
+
+    }
+    .content-section-short {
+      position: relative;
+      padding: 60px 3%;
+      background-color: transparent;
+    }
+
+      
+    @media screen and (max-width: 991px){
+      .content-section-short {
+        padding-top: 100px;
+        padding-bottom: 100px;
+      }
+    }
+    
+    .accordion{
+      display: none;
+    }
+    .accordion.active{
+      display: block;
+    }
+    .accordion-button::after {
+      background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+      transform: scale(.7) !important;
+    }
+    .accordion-button:not(.collapsed)::after {
+      background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+    }
+
+  
+  
+  
+    .container-sm{
+      max-width: 960px;
+      padding-top: 2rem;
+      box-shadow: 1px 10px 15px grey;
+      margin: auto;
+
+    }
+  
+  
+  
+  
