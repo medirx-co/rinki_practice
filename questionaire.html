@@ -1,0 +1,322 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <!-- Required Meta Tags Start -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Veles Therapeutics</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Required Meta Tags End -->
+    
+    <!-- Bootstrap-css include -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    
+    <!-- Favicon Tags Start -->
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Favicon Tags End -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="questionaire.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        body {
+            background-color: #b8c6db;
+            background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 100%);
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+            margin: 0;
+            display: flex;
+            color: #000000;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.65;
+            font-style: normal;
+            font-display: swap;
+            font-family: "Jost", sans-serif;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+    <!-- Add your site or application content here -->
+
+    <!-- |==========================================| -->
+    <!-- |=====|| Preloader Start ||===============| -->
+    <div class="preloader">
+        <div class="preloader__content">
+            <div class="preloader__wrapper">
+                <div class="preloader__spinner"></div>
+                <div class="preloader__txt">
+                    <span data-text-preloader="V" class="letters-loading">V</span>
+                    <span data-text-preloader="E" class="letters-loading">E</span>
+                    <span data-text-preloader="L" class="letters-loading">L</span>
+                    <span data-text-preloader="L" class="letters-loading">L</span>
+                    <span data-text-preloader="E" class="letters-loading">E</span>
+                    <span data-text-preloader="S" class="letters-loading">S</span>
+                    <!-- <span data-text-preloader="T" class="letters-loading">T</span>
+                    <span data-text-preloader="H" class="letters-loading">H</span> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- |=====|| Preloader End ||=================| -->
+    
+    <!--============================================-->
+ 
+    <main>
+        <div class="quiz-header">
+            <div class="container-fluid">
+                <!-- <img class="pt-3" src="./assets/logo.png" alt="logo" width="200px"> -->
+                <div class="row text-center pt-5">
+                   <!-- Circles which indicates the steps of the form: -->
+                   <div class="col step_progress d-flex d-none d-sm-block">
+                      <span class="step bg-white rounded-pill active"></span>
+                      <span class="step bg-white rounded-pill"></span>
+                      <span class="step bg-white rounded-pill"></span>
+                      <span class="step bg-white rounded-pill"></span>
+                      <span class="step bg-white rounded-pill"></span>
+                      <span class="step bg-white rounded-pill"></span>
+                      <span class="step bg-white rounded-pill"></span>
+                   </div>
+                </div>
+            </div>
+            <div class="container">
+                <form class="multisteps_form position-relative" id="wizard" method="">
+                   <!------------------------- Step-1 ----------------------------->
+                   <div class="multisteps_form_panel" style="display: block;">
+                      <!-- Form-content -->
+                      <span class="question_number text-uppercase d-flex justify-content-center align-items-center">Question 1/7</span>
+                      <h2 class="question_title text-center">Please Select Your Concern?</h2>
+                      <!-- Form-items -->
+                      <div class="form_items d-flex justify-content-center">
+                         <ul class="ps-0">
+                            <li class="active step_1 rounded-pill bg-white text-start ">
+                               <input type="radio" id="opt_1" name="stp_1_select_option" value="Acne">
+                               <label for="opt_1">Acne</label>
+                            </li>
+                            <li class="step_1 rounded-pill bg-white ">
+                               <input type="radio" id="opt_2" name="stp_1_select_option" value="Issues with Blemishes, Color &amp; Tone">
+                               <label for="opt_2">Issues with Blemishes, Color &amp; Tone</label>
+                            </li>
+                            <li class="step_1 rounded-pill bg-white ">
+                               <input type="radio" id="opt_3" name="stp_1_select_option" value="No Issues">
+                               <label for="opt_3">No Issues.</label>
+                            </li>
+                            
+                         </ul>
+                      </div>
+                   </div>
+                   <!------------------------- Step-2 ----------------------------->
+                   <div class="multisteps_form_panel">
+                      <!-- Form-content -->
+                      <span class="question_number text-uppercase d-flex justify-content-center align-items-center">Question 2/7</span>
+                      <h2 class="question_title text-center">How many Comodones (Whiteheads, Blackheads, Tiny Pimples) Do you have on</h2>
+                      <!-- Form-items -->
+                      <div class="form_items d-flex justify-content-center">
+                         <ul class="ps-0">
+                            <li class="active step_2 rounded-pill bg-white ">
+                               <input type="radio" id="opt_6" name="stp_2_select_option" value="Less Than 5">
+                               <label for="opt_6">Less Than 5</label>
+                            </li>
+                            <li class="step_2 rounded-pill bg-white ">
+                               <input type="radio" id="opt_7" name="stp_2_select_option" value="About 5-10">
+                               <label for="opt_7">About 5-10</label>
+                            </li>
+                            <li class="step_2 rounded-pill bg-white ">
+                               <input type="radio" id="opt_8" name="stp_2_select_option" value="More Than 10">
+                               <label for="opt_8">More Than 10</label>
+                            </li>
+                            
+                         </ul>
+                      </div>
+                   </div>
+                   <!------------------------- Step-3 ----------------------------->
+                   <div class="multisteps_form_panel">
+                      <!-- Form-content -->
+                      <span class="question_number text-uppercase d-flex justify-content-center align-items-center">Question 3/7</span>
+                      <h2 class="question_title text-center">How Many Red Pimples Do You Have on Your Face?</h2>
+                      <!-- Form-items -->
+                      <div class="form_items d-flex justify-content-center">
+                         <ul class="ps-0">
+                            <li class="active step_3 rounded-pill bg-white ">
+                               <input type="radio" id="opt_11" name="stp_3_select_option" value="0-2">
+                               <label for="opt_11">0-2</label>
+                            </li>
+                            <li class="step_3 rounded-pill bg-white ">
+                               <input type="radio" id="opt_12" name="stp_3_select_option" value="3-5">
+                               <label for="opt_12">3-5</label>
+                            </li>
+                            <li class="step_3 rounded-pill bg-white ">
+                               <input type="radio" id="opt_13" name="stp_3_select_option" value="More Than 5">
+                               <label for="opt_13">More Than 5</label>
+                            </li>
+                            
+                         </ul>
+                      </div>
+                   </div>
+                   <!------------------------- Step-4 ----------------------------->
+                   <div class="multisteps_form_panel">
+                      <!-- Form-content -->
+                      <span class="question_number text-uppercase d-flex justify-content-center align-items-center">Question 4/7</span>
+                      <h2 class="question_title text-center">How Many Pus Filled Pimples Do You Have On Your Face?</h2>
+                      <!-- Form-items -->
+                      <div class="form_items d-flex justify-content-center">
+                         <ul class="ps-0">
+                            <li class="active step_4 rounded-pill bg-white ">
+                               <input type="radio" id="opt_16" name="stp_4_select_option" value="0-2">
+                               <label for="opt_16">0-2</label>
+                            </li>
+                            <li class="step_4 rounded-pill bg-white ">
+                               <input type="radio" id="opt_17" name="stp_4_select_option" value="3-5">
+                               <label for="opt_17">3-5</label>
+                            </li>
+                            <li class="step_4 rounded-pill bg-white ">
+                               <input type="radio" id="opt_18" name="stp_4_select_option" value="More Than 5">
+                               <label for="opt_18">More Than 5</label>
+                            </li>
+                            
+                         </ul>
+                      </div>
+                   </div>
+                   <!------------------------- Step-5 ----------------------------->
+                   <div class="multisteps_form_panel">
+                      <!-- Form-content -->
+                      <span class="question_number text-uppercase d-flex justify-content-center align-items-center">Question 5/7</span>
+                      <h2 class="question_title text-center">How Many Acne Scars (Craters, Pits &amp; Depressions Left by Past Acne) Do You Have?</h2>
+                      <!-- Form-items -->
+                      <div class="form_items d-flex justify-content-center">
+                         <ul class="ps-0">
+                            <li class="active step_5 rounded-pill bg-white">
+                               <input type="radio" id="opt_21" name="stp_5_select_option" value="0-2">
+                               <label for="opt_21">0-2</label>
+                            </li>
+                            <li class="step_5 rounded-pill bg-white">
+                               <input type="radio" id="opt_22" name="stp_5_select_option" value="3-5">
+                               <label for="opt_22">3-5</label>
+                            </li>
+                            <li class="step_5 rounded-pill bg-white">
+                               <input type="radio" id="opt_23" name="stp_5_select_option" value="More Than 5">
+                               <label for="opt_23">More Than 5</label>
+                            </li>
+                            
+                         </ul>
+                      </div>
+                   </div>
+                   <!------------------------- Step-6 ----------------------------->
+                   <div class="multisteps_form_panel">
+                      <!-- Form-content -->
+                      <span class="question_number text-uppercase d-flex justify-content-center align-items-center">Question 6/7</span>
+                      <h2 class="question_title text-center">What is your Skin Type?</h2>
+                      <!-- Form-items -->
+                      <div class="form_items d-flex justify-content-center">
+                         <ul class="ps-0">
+                            <li class="active step_6 rounded-pill bg-white">
+                               <input type="radio" id="opt_22" name="stp_6_select_option" value="Oily">
+                               <label for="opt_22">Oily</label>
+                            </li>
+                            <li class="step_6 rounded-pill bg-white">
+                               <input type="radio" id="opt_23" name="stp_6_select_option" value="Dry">
+                               <label for="opt_23">Dry</label>
+                            </li>
+                            <li class="step_6 rounded-pill bg-white">
+                               <input type="radio" id="opt_24" name="stp_6_select_option" value="Normal">
+                               <label for="opt_24">Normal</label>
+                            </li>
+                            
+                         </ul>
+                      </div>
+                   </div>
+                   <!------------------------- Step-7 ----------------------------->
+                   <div class="multisteps_form_panel">
+                    <!-- Form-content -->
+                    <span class="question_number text-uppercase d-flex justify-content-center align-items-center">Question 7/7</span>
+                    <h2 class="question_title text-center">What is your Skin Type?</h2>
+                    <!-- Form-items -->
+                    <div class="form_items d-flex justify-content-center">
+                       <ul class="ps-0">
+                          <li class="active step_7 rounded-pill bg-white">
+                             <input type="radio" id="opt_24" name="stp_6_select_option" value="Oily">
+                             <label for="opt_24">Oily</label>
+                          </li>
+                          <li class="step_7 rounded-pill bg-white">
+                             <input type="radio" id="opt_25" name="stp_6_select_option" value="Dry">
+                             <label for="opt_25">Dry</label>
+                          </li>
+                          <li class="step_7 rounded-pill bg-white">
+                             <input type="radio" id="opt_26" name="stp_6_select_option" value="Normal">
+                             <label for="opt_26">Normal</label>
+                          </li>
+                          
+                       </ul>
+                    </div>
+                 </div>
+                   <!---------- Form Button ---------->
+                   <div class="form_btn text-center ms-5 mt-5">
+                      <button type="button" class="f_btn text-uppercase rounded-pill border-0" id="prevBtn" onclick="nextPrev(-1)" style="display: none; background: #F900BF;">Last Question</button>
+                      <button type="button" class="f_btn text-uppercase rounded-pill border-0" id="nextBtn" onclick="nextPrev(1)" style="background: #F900BF;">Next Question</button>
+                   </div>
+                </form>
+             </div>
+        </div>
+    </main>
+
+
+    <!-- |==========================================| -->
+    
+
+    <!-- |==========================================| -->
+
+
+    <!-- |==========================================| -->
+    <!-- |=====|| ScrollToTop Start ||===============| -->
+    <!-- <a href="#" class="scrollToTop">
+        <i class="fas fa-level-up-alt"></i>
+    </a> -->
+    <!-- |=====|| ScrollToTop End ||=================| -->
+    <!-- |==========================================| -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script src="questionaire.js"></script>
+    
+    <!-- |==========================================| -->
+    <!-- |=====|| All js here ||===============| -->
+    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/vendor/popper.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/jquery.waypoints.min.js"></script>
+    <script src="assets/js/vendor/jquery.easing.1.3.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <script src="assets/js/one-page-nav-min.js"></script>
+    <!-- Ajax Contact js -->
+    <script src="assets/js/ajax-contact.js"></script>
+    <!-- Main js -->
+    <script src="assets/js/main.js"></script>
+    <!-- |=====|| All js End ||=================| -->
+    <!-- |==========================================| -->
+</body>
+
+</html>

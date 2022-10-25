@@ -1,0 +1,22 @@
+
+
+* {
+  box-sizing: border-box;
+}
+/* .card{
+    background: rgb(103, 103, 243);
+} */
+p{
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+li{
+    color: black;
+    display: block;
+}
+.sell-product{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    /* padding: 15px; */
+}
