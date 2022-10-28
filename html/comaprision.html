@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Diagnosis', 'Pervious', 'Current'],
+          ['Left Under Eye Dark Circle', 50, 60,],
+          ['Right Under Eye Dark Circle', 91, 81,],
+          ['Pigmentation Left Side', 49, 39,],
+          ['Pigmentation Right Side', 42, 32,],
+          ['Forehead Finelines', 0, 9,],
+          ['Left Side Wrinkles', 42, 32,],
+          ['Right Side Wrinkles', 17, 10,]
+        ]);
+
+        var options = {
+          chart: {
+            title: 'Company Performance',
+            subtitle: 'Diagnosis, Pervious, and Current',
+          },
+          bars: 'horizontal' // Required for Material Bar Charts.
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('barchart_material'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+    </script>
+  </head>
+  <body style="text-align:center;">
+    <div id="barchart_material" style="width: 800px; height: 500px; border-style: solid; border-color: rgba(15, 19, 199, 0.762); margin: auto; padding: 15px;"></div>
+  </body>
+</html>
