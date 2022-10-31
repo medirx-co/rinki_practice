@@ -28,32 +28,32 @@
             
         </style>
         <!-- CSS End -->
-        <title>Animation-3</title>
+        <title>Animation-5</title>
 
     </head>
     <body>
         <h2>My First JavaScript Animation</h2>
-        <div id="container" onmouseover="myMove()">
+        <div id="container" onmouseout="myMove()">
             <div id="animate"></div>
         </div>
 
         <!-- JS start -->
             <script>
                 function myMove() {
-                let id = null;
-                const elem = document.getElementById("animate");   
-                let pos = 0;
-                clearInterval(id);
-                id = setInterval(frame, 5);
-                function frame() {
-                    if (pos == 540) {
+                    let id = null;
+                    const elem = document.getElementById("animate");   
+                    let pos = 0;
                     clearInterval(id);
-                    } else {
-                    pos++; 
-                    elem.style.top = pos + "px"; 
-                    elem.style.left = pos + "px"; 
+                    id = setInterval(frame, 8);
+                    function frame() {
+                        if (pos == 540) {
+                        clearInterval(id);
+                        } else {
+                        pos++; 
+                        elem.style.top = pos + "px"; 
+                        elem.style.left = pos + "px"; 
+                        }
                     }
-                }
                 }
             </script>
 

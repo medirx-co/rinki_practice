@@ -6,24 +6,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- CSS Start -->
         <style>
-            .animation {
-                position: relative;
-                animation-name:animation;
-                animation-duration: 5s;
-                /* background-color: aqua; */
-                margin: 20%;
+            #container {
+            width: 600px;
+            height: 600px;
+            position: relative;
+            background: rgb(0, 238, 255);
+            margin: auto;
             }
-
-            @keyframes animation {
-                0%   {background-color:aqua; right:0px; top:0px;}
-                /* 25%  {background-color:yellow; right:200px; top:0px;} */
-                50%  {background-color:blue; right:200px; top:200px;}
-                /* 75%  {background-color:green; right:0px; top:200px;} */
-                100% {background-color:aqua; right:0px; top:0px;}
+            #animate {
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            background: rgb(47, 255, 0);
             }
-            h4{
+            h2{
                 text-align: center;
-                margin: 1rem;
+            }
+            p{
+                text-align: center;
+            }
+            button{
+               font-size: 20px;
+               background-color:  forestgreen;
+               color: white;
+               border-radius: 15px;
+               padding: 5px 5px 6px;
             }
         </style>
         <!-- CSS End -->
@@ -31,8 +38,37 @@
 
     </head>
     <body>
-        <div class="animation">
-            <h4>Animation</h4>
+        <h2>My First JavaScript Animation</h2>
+
+        <p><button onclick="myMove()">Click Me</button></p>
+        <div id="container">
+            <div id="animate"></div>
         </div>
+
+        <!-- JS start -->
+            <script>
+                function myMove() {
+                let id = null;
+                const elem = document.getElementById("animate");   
+                let pos = 0;
+                clearInterval(id);
+                id = setInterval(frame, 7);
+                function frame() {
+                    if (pos == 540) {
+                    clearInterval(id);
+                    } else {
+                    pos++; 
+                    elem.style.top = pos + "px"; 
+                    elem.style.left = pos + "px"; 
+                    }
+                }
+                }
+            </script>
+
+
+
+
+        <!-- JS end -->
+
     </body>
 </html>
